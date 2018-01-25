@@ -1,0 +1,8 @@
+@echo off
+option batch on
+option confirm off
+open RB
+option transfer binary
+get -filemask=|/opt/nfs_www/PROD/roche-bobois.com/filesbak/;/opt/nfs_www/PROD/roche-bobois.com/brochures/;/opt/nfs_www/PROD/roche-bobois.com/debug/;/opt/nfs_www/PROD/roche-bobois.com/files/;/opt/nfs_www/PROD/roche-bobois.com/logs/;/opt/nfs_www/PROD/roche-bobois.com/media/;/opt/nfs_www/PROD/roche-bobois.com/*.xml.gz /opt/nfs_www/PROD/roche-bobois.com/ E:\working_dir\divers\backups\rb_siteweb_PROD_2017-07-12_133127\
+close
+exit

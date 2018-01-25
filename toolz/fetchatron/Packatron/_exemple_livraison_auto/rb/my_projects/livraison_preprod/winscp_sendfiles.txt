@@ -1,0 +1,8 @@
+@echo off
+option batch on
+option confirm off
+open "RB - MyProjects"
+option transfer binary
+put E:\program_data\temp\2017-07-06_143954\dev.zip /opt/nfs/preprod/_delivery/dev.zip 
+close
+exit

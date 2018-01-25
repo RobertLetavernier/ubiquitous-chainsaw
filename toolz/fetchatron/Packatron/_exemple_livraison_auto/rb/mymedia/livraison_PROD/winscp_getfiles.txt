@@ -1,0 +1,8 @@
+@echo off
+option batch on
+option confirm off
+open RB
+option transfer binary
+get -filemask=|/opt/nfs/PROD/mymedia/etiquette/logs/;/opt/nfs/PROD/mymedia/etiquette/admin/module/csv/downloaded_csv/;/opt/nfs/PROD/mymedia/etiquette/media/;/opt/nfs/PROD/mymedia/charte*/;/opt/nfs/PROD/mymedia/files/;/opt/nfs/PROD/mymedia/etiquette/logs/;/opt/nfs/PROD/mymedia/etiquette/media; /opt/nfs/PROD/mymedia/ E:\working_dir\divers\backups\rb_mymedia_PROD_20170710\
+close
+exit

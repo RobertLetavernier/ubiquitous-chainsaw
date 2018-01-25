@@ -1,0 +1,8 @@
+@echo off
+option batch on
+option confirm off
+open RB
+option transfer binary
+put E:\program_data\temp\20170710\* /opt/nfs_www/PREPROD/roche-bobois.com/
+close
+exit

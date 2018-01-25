@@ -1,0 +1,9 @@
+@echo off
+option batch on
+option confirm off
+open ftp://myrochebobois:D2PQdhhS@rochebobois20.ecritel.net
+option transfer binary
+cd myintranet
+get -filemask="|/myintranet/logs/*.* /myintranet/media/*.* /myintranet/TeamViewerQS.exe /myintranet/wkhtltopdf-i386" /myintranet/* E:\working_dir\divers\backups\rb_intranet_preprod_2017-07-10_121056\ 
+close
+exit
