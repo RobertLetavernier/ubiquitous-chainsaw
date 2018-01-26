@@ -1,5 +1,5 @@
 <?php
-namespace core;
+// namespace core;
 
 // use App\Autoloader; inutile car tu charges manuellement avec un require_once plus bas
 
@@ -20,6 +20,7 @@ var_dump(ROOT);
 
 
 
-$contrib = new m\contributor();
+$contrib = new m\contributor(15);
+// $contrib = m\contributor::fetch(0);
 
-var_dump ($contrib);
+print_r ($contrib);

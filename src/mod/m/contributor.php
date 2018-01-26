@@ -1,5 +1,5 @@
 <?php
-namespace m\contributor;
+namespace m;
 
 class contributor extends _humanbeeing
 {

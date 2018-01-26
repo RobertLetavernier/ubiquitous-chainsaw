@@ -1,5 +1,5 @@
 <?php
-namespace core;
+// namespace core;
 
 class Autoloader{
 
@@ -9,7 +9,7 @@ class Autoloader{
 
     public static function autoload($class){
         $parts = preg_split('#\\\#', $class);
-
+	
         // on extrait le dernier element 
         $className = array_pop($parts);
 
