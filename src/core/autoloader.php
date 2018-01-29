@@ -18,7 +18,7 @@ class Autoloader{
 
         $path = implode(DS, $parts);
         $file = $className.'.php';
-	$filepath = ROOT.'/mod/'.str_replace('#\\\#', DS, $class).'.php';
+	$filepath = ROOT.'mod'.DS.str_replace('#\\\#', DS, $class).'.php';
         // $filepath = ROOT.strtolower($path).DS.$file;
 
         // var_dump($filepath); => C:\xampp\htdocs\Labs\Eloyas\app\tester\Test.php
