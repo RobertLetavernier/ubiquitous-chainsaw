@@ -1,6 +1,6 @@
 <?php
 
-abstract class _abstract
+abstract class _pdoMysql
 {
 	private $id;
 	public $key;

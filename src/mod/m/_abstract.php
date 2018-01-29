@@ -3,7 +3,8 @@ namespace m;
 
 abstract class _abstract
 {
-	private $id;
+	private $_dataconnector;
+	private $_id;
 	public $key;
 	
 	public static function fetch($Filter) {
@@ -15,7 +16,8 @@ abstract class _abstract
 	
 	public function __construct ($filter)
 	{
+		$this->_dataconnector = new connectors\pdoMysqlite();
 		// echo __CLASS__;
-		// $this->id = $filter;
+		$this->_id = $filter;
 	}
 }
