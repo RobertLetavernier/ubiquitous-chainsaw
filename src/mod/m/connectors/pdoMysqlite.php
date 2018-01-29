@@ -2,6 +2,7 @@
 namespace m\connectors;
 
 use \pdo;
+
 class pdoMysqlite
 {
 	private $id;
