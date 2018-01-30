@@ -8,6 +8,7 @@ class Autoloader{
     }
 
     public static function autoload($class){
+	    var_dump ($class);
         $parts = preg_split('#\\\#', $class);
 	
         // on extrait le dernier element 
@@ -23,7 +24,7 @@ class Autoloader{
 
         // var_dump($filepath); => C:\xampp\htdocs\Labs\Eloyas\app\tester\Test.php
         //
-        require $filepath;
+	require $filepath;
     }
 
 }
